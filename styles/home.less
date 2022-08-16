@@ -2,14 +2,13 @@
 @import './default-styles.less';
 @import './header.less';
 
-
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-  .main-section {
-    margin-bottom: 2em;
-  }
+.main-section {
+  margin-bottom: 2em;
+}
 
 .main-section__tytle__wrap {
   text-align: center;
@@ -63,11 +62,24 @@ html {
   list-style-type: none;
 }
 .docs {
+  text-align: center;
+  img {
+    padding: 1em 0;
+    border-bottom: 1px solid @line-color;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.main-footer {
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
     text-align: center;
-    img {
-        padding: 1em 0;
-        border-bottom: 1px solid @line-color;
-        display: inline-block;
-        width: 100%;
+    a {
+       display: block;
+       text-decoration: none;
+    }
+    * {
+        margin-bottom: 0.5em;
     }
 }
