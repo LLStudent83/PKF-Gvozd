@@ -1,0 +1,38 @@
+@font-family: 'Heebo', sans-serif;
+
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 900; //black
+  src: local('Heebo'), url('../fonts/static/Heebo-Black.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700; // bold
+  src: local('Heebo'), url('../fonts/static/Heebo-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500; //medium
+  src: local('Heebo'), url('../fonts/static/Heebo-Medium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400r; // regula
+  src: local('Heebo'), url('../fonts/static/Heebo-Regular.ttf') format('ttf');
+}
+
+@primary-text-color: #6b6b6b;;
+
+html, h2, h1, h3 {
+  font-size: calc(0.5em + 0.71vw); //width 1152px - font-syze 16px
+  font-family: @font-family;
+  color: @primary-text-color;
+  font-weight: 400;
+}

@@ -1,0 +1,46 @@
+@import './fonts.less';
+
+@media (max-width: 31.25rem) {
+  .header__nav__gamburger-container {
+    cursor: pointer;
+    height: 2.2em;
+    width: 2em;
+    position: relative;
+    margin-left: auto;
+  }
+
+  @durger: {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    background-color: @primary-text-color;
+    height: 0.4em;
+    width: 2em;
+    border-radius: 0.3em;
+    border: none;
+  };
+
+  .header__nav__gamburger {
+    @durger();
+    &::after {
+      content: '';
+      @durger();
+      top: 20px;
+    }
+    &::before {
+      content: '';
+      @durger();
+      top: 10px;
+    }
+  }
+}
+
+@media (min-width: 31.26rem) {
+  .header__nav__gamburger {
+    display: none;
+  }
+}
+
+.main-longer {
+  margin-top: 20em;
+}

@@ -1,0 +1,21 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@super-container-color: #fff;
+@line-color: #878289;
+
+.super-container {
+  width: 100%;
+  background-color: @super-container-color;
+  padding: 0 1em 0 1em;
+}
+
+main {
+  margin-top: 7em;
+  transition: margin-top 400ms;
+}

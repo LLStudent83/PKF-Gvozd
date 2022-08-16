@@ -1,0 +1,90 @@
+@import './burger-menu.less';
+
+
+@media (max-width: 31.25rem) {
+  .super-container .header__nav .header__nav__list {
+    top: 100%;
+    width: 100%;
+    background-color: @primary-text-color;
+    position: absolute;
+    display: block;
+    right: 0;
+  }
+
+  .header__nav__item {
+    text-align: center;
+    font-size: 0;
+    color: white;
+  }
+
+  .header__nav__item a {
+    padding: 1em 0;
+    display: block;
+  }
+
+  .header__nav__list .header__nav__item:nth-child(n + 2) {
+    margin-left: 0;
+  }
+
+  .header__nav__list .header__nav__item a {
+    color: white;
+  }
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  height: 4em;
+  top: 0;
+  left: 1em;
+  right: 1em;
+  background-color: @super-container-color;
+  padding-top: 1em;
+  border-bottom: 4px solid @line-color;
+}
+
+.header__logo {
+  min-width: 145px;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.header__nav {
+  display: flex;
+  font-weight: 500;
+  color: black;
+}
+
+.header__nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1em;
+}
+
+.header__nav__item {
+  list-style-type: none;
+  text-align: center;
+  //vertical-align:;
+}
+
+.header__nav__item a {
+  text-decoration: none;
+  color: @primary-text-color;
+}
+
+.header__nav__list .header__nav__item .header__nav__item-active {
+  color: #ff6464;
+}
+
+.header__nav__item:nth-child(n + 2) {
+  margin-left: 2em;
+}
+
+.header__nav__item-visible {
+  font-size: 1.25rem;
+  transition: font-size 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-bottom: 0.1px solid black;
+}
+
