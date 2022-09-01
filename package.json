@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/LLStudent83/PKF-Gvozd/issues"
   },
-  "homepage": "https://github.com/LLStudent83/PKF-Gvozd#readme"
+  "homepage": "https://github.com/LLStudent83/PKF-Gvozd#readme",
+  "dependencies": {}
 }

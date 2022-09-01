@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet/less" type="text/css" href="./styles/home.less" />
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="./lazyLoad.js"></script>
     <title>PKF-Gvozd</title>
   </head>
   <body>
@@ -81,16 +82,20 @@
               </div>
             </section>
 
+<!-- далее медленная загрузка -->
+
             <section class="main-section__catalog__item">
               <h3 class="catalog__item__tytle">Аксессуары для Сварки</h3>
               <img
+              class="lazyLoad"
+              
                 sizes="(max-width: 230px) 100vw, 230px"
-                srcset="
+                data-srcset="
                   ./image/accessories_uii8zy_c_scale,w_80.png   80w,
                   ./image/accessories_uii8zy_c_scale,w_169.png 169w,
                   ./image/accessories_uii8zy_c_scale,w_230.png 230w
                 "
-                src="./image/ccessories_uii8zy_c_scale,w_230.png"
+                data-src="./image/ccessories_uii8zy_c_scale,w_230.png"
                 alt="Аксессуары для электросварки"
               />
               <div class="catalog__item-discription">
@@ -115,12 +120,15 @@
             <section class="main-section__catalog__item">
               <h3 class="catalog__item__tytle">Крепёж повышенной прочности</h3>
               <img
+              class="lazyLoad"
+              
                 sizes="(max-width: 310px) 100vw, 310px"
-                srcset="
+                data-srcset="
                   ./image/DIN-912_z6gepw_c_scale,w_180.jpg 180w,
                   ./image/DIN-912_z6gepw_c_scale,w_310.jpg 310w
                 "
-                src="./image/DIN-912_z6gepw_c_scale,w_310.jpg"
+                data-src="./image/DIN-912_z6gepw_c_scale,w_310.jpg"
+                src=" ./image/DIN-912_z6gepw_c_scale,w_180.jpg"
                 alt="Крепёж повышенной прочности DIN 912"
               />
               <div class="catalog__item-discription">
@@ -134,12 +142,14 @@
             <section class="main-section__catalog__item">
               <h3 class="catalog__item__tytle">Шплинты</h3>
               <img
+              class="lazyLoad"
+              
                 sizes="(max-width: 310px) 100vw, 310px"
-                srcset="
+                data-srcset="
                   ./image/cotter-pin_bzbni0_c_scale,w_180.jpg 180w,
                   ./image/cotter-pin_bzbni0_c_scale,w_310.jpg 310w
                 "
-                src="./image/cotter-pin_bzbni0_c_scale,w_310.jpg"
+                data-src="./image/cotter-pin_bzbni0_c_scale,w_310.jpg"
                 alt="Шплинты"
               />
               <div class="catalog__item-discription">
@@ -153,12 +163,14 @@
             <section class="main-section__catalog__item">
               <h3 class="catalog__item__tytle">Стандартный крепёж</h3>
               <img
+              class="lazyLoad"
+              
                 sizes="(max-width: 310px) 100vw, 310px"
-                srcset="
+                data-srcset="
                   ./image/standart-fasteners_gcp95i_c_scale,w_180.jpg 180w,
                   ./image/standart-fasteners_gcp95i_c_scale,w_310.jpg 310w
                 "
-                src="./image/standart-fasteners_gcp95i_c_scale,w_310.jpg"
+                data-src="./image/standart-fasteners_gcp95i_c_scale,w_310.jpg"
                 alt="Стандартный крепёж"
               />
               <div class="catalog__item-discription">
@@ -178,8 +190,10 @@
             </span>
           </div>
           <img
+          class="lazyLoad"
+          
             sizes="calc(98.56vw - 16px)"
-            srcset="
+            data-srcset="
               ./image/About-activities_z5qfa4_c_scale,w_320.png 320w,
               ./image/About-activities_z5qfa4_c_scale,w_404.png 404w,
               ./image/About-activities_z5qfa4_c_scale,w_477.png 477w,
@@ -188,43 +202,50 @@
               ./image/About-activities_z5qfa4_c_scale,w_663.png 663w,
               ./image/About-activities_z5qfa4_c_scale,w_705.png 705w
             "
-            src="./image/About-activities_z5qfa4_c_scale,w_705.png"
+            data-src="./image/About-activities_z5qfa4_c_scale,w_705.png"
             alt="О деятельности компании"
           />
 
           <img
+          class="lazyLoad"
+          
             sizes="calc(98.56vw - 16px)"
-            srcset="
+            data-srcset="
               ./image/Diller-FoxWeld_q2b5wo_c_scale,w_320.png 320w,
               ./image/Diller-FoxWeld_q2b5wo_c_scale,w_469.png 469w,
               ./image/Diller-FoxWeld_q2b5wo_c_scale,w_590.png 590w,
               ./image/Diller-FoxWeld_q2b5wo_c_scale,w_695.png 695w,
               ./image/Diller-FoxWeld_q2b5wo_c_scale,w_705.png 705w
             "
-            src="./image/Diller-FoxWeld_q2b5wo_c_scale,w_705.png"
+            data-src="./image/Diller-FoxWeld_q2b5wo_c_scale,w_705.png"
             alt="Дилерское соглашение с FoxWeld"
           />
 
           <img
+          class="lazyLoad"
+          
             sizes="calc(98.56vw - 16px)"
-            srcset="
+            data-srcset="
               ./image/CZCM-metiz_llq2xq_c_scale,w_320.png 320w,
               ./image/CZCM-metiz_llq2xq_c_scale,w_443.png 443w,
               ./image/CZCM-metiz_llq2xq_c_scale,w_544.png 544w,
               ./image/CZCM-metiz_llq2xq_c_scale,w_636.png 636w,
               ./image/CZCM-metiz_llq2xq_c_scale,w_705.png 705w
             "
-            src="./image/CZCM-metiz_llq2xq_c_scale,w_705.png"
+            data-src="./image/CZCM-metiz_llq2xq_c_scale,w_705.png"
             alt="Диллерское от СЗСМ"
+            
           />
 
           <img
+          class="lazyLoad"
+          
             sizes="calc(98.56vw - 16px)"
-            srcset="
+            data-srcset="
               ./image/Deka_nucmmj_c_scale,w_320.jpg 320w,
               ./image/Deka_nucmmj_c_scale,w_705.jpg 705w
             "
-            src="./image/Deka_nucmmj_c_scale,w_705.jpg"
+            data-src="./image/Deka_nucmmj_c_scale,w_705.jpg"
             alt="Диллерское от Дека"
           />
         </section>
@@ -240,7 +261,6 @@
                 </td></tr>
             <tr><td>К/с 30101810965770000743</td></tr>
             <tr><td>БИК 046577743</td></tr>
-
             <tr><td>6</td><td>ИНН</td><td>6683003069</td></tr>
             <tr><td>7</td><td>КПП</td><td>668301001</td></tr>
             <tr><td>8</td><td>ОКПО</td><td>25019495</td></tr>
@@ -255,8 +275,7 @@
           </span>
         </div>
         <p>
-          Если у Вас появились вопросы вы всегда можете нам позвонить в любое
-          время по телефонам:
+          Если у Вас появились вопросы, вы всегда можете нам позвонить в рабочее время по телефонам:
         </p>
         <a class="main-footer__tel" href="tel:+79043888326">+7(904)388-83-26</a>
         <a class="main-footer__tel" href="tel:+73432698325">+7(343)269-83-25</a>
@@ -265,6 +284,7 @@
       </footer>
     </div>
   </body>
+  <script src="./gm.js"></script>
   <script src="./burger-menu.js"></script>
   <script src="./highlight-navigation-element.js"></script>
 </html>
